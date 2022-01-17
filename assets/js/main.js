@@ -152,6 +152,6 @@ document.getElementById("to_token_select").onclick = () => {
   openModal("to");
 };
 document.getElementById("login_button").onclick = login;
-document.getElementById("from_amount").onblur = getQuote;
+document.getElementById("from_amount").oninput = getQuote;
 document.getElementById("swap_button").onclick = trySwap;
 
