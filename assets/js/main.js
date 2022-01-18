@@ -50,6 +50,7 @@ function selectToken(address) {
     currentSwap[currentSelect] = tokens[address];
     console.log(currentSwap)
     renderInterface();
+    document.getElementById("select_a_token").remove();
     getQuote();
 }
 
