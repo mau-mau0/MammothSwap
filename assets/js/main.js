@@ -101,7 +101,7 @@ async function getQuote() {
       amount: amount,
     });
     console.log(quote);
-    document.getElementById("gas_estimate").innerHTML = quote.estimatedGas;
+    document.getElementById("gas_estimate").innerHTML = `${quote.estimatedGas} in wei`;
     document.getElementById("to_amount").value = Math.round(quote.toTokenAmount / 10 ** quote.toToken.decimals * 1000) / 1000;
     }
 
